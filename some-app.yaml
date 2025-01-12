@@ -4,6 +4,8 @@ metadata:
   name: some-app
   finalizers:
     - resources-finalizer.argocd.argoproj.io/foreground
+  annotations:
+    codefresh.io/product: test-vitalii-product
 spec:
   project: default
   destination:
